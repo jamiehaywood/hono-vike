@@ -5,8 +5,10 @@ export async function handleSsr(c: Context, next: Next) {
   const pageContextInit = {
     urlOriginal: c.req.url,
   };
+
   const pageContext = await renderPage(pageContextInit);
   const { httpResponse } = pageContext;
+
   if (!httpResponse) {
     await next();
   } else {
