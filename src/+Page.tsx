@@ -1,6 +1,7 @@
 export default Page;
 
 import React from "react";
+
 function Page() {
   return (
     <>
@@ -8,9 +9,7 @@ function Page() {
       This page is:
       <ul>
         <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <button>Test</button>
-        </li>
+        <li>Interactive.</li>
       </ul>
     </>
   );
