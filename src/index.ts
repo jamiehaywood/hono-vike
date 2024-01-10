@@ -3,6 +3,8 @@ import { handleSsr } from "./ssr";
 
 const app = new Hono();
 
-app.get("/api/hello", (c, next) => c.json("Hello World!"));
+app.get("/api/hello", (c) => c.json("Hello World!"));
 
-app.use(handleSsr);
+app.use("*", handleSsr);
+
+export default app;
