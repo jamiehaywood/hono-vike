@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "yarn build && wrangler deploy --assets dist/client"
   },
   "dependencies": {
     "hono": "^3.12.1",
@@ -18,6 +19,7 @@
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.11",
+    "vite-plugin-cloudflare": "^0.4.1",
     "wrangler": "^3.22.0"
   }
 }
