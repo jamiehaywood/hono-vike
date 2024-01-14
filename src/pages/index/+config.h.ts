@@ -1,3 +1,5 @@
+import { Config } from "vike/types";
+
 export default {
   meta: {
     Page: {
@@ -7,4 +9,4 @@ export default {
       },
     },
   },
-};
+} satisfies Config;
