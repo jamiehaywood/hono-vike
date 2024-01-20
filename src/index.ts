@@ -4,7 +4,7 @@ import apiRoutes from "./api/routes";
 
 const app = new Hono();
 
-app.route("/api", apiRoutes)
+app.route("/api", apiRoutes);
 
 app.use("*", handleSsr);
 

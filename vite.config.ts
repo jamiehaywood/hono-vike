@@ -7,12 +7,16 @@ export default defineConfig({
   plugins: [
     react(),
     vike({
-      prerender: true
+      prerender: true,
     }),
     devServer({
       entry: "src/index.ts",
       // Pass requests to Vike to handle SSR & SSR HMR
-      exclude: [/^\/src\/pages\/.*/, /^\/src\/renderer\/.*/, ...defaultOptions.exclude],
+      exclude: [
+        /^\/src\/pages\/.*/,
+        /^\/src\/renderer\/.*/,
+        ...defaultOptions.exclude,
+      ],
     }),
   ],
 });
