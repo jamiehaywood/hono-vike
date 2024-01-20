@@ -17,6 +17,7 @@ const routes: Routes[] = [
   },
 ];
 
+// biome-ignore lint/complexity/noForEach: clearer than for loop
 routes.forEach((route) => {
   app[route.method](route.path, ...route.middlewares);
 });
