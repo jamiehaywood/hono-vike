@@ -9,7 +9,8 @@
     "hono": "^3.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vike": "^0.4.156"
+    "vike": "^0.4.156",
+    "vike-react": "^0.3.9"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231218.0",
