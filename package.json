@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "yarn build && wrangler deploy --assets dist/client"
+    "deploy": "yarn build && wrangler deploy --assets dist/client",
+    "test": "vitest --coverage"
   },
   "dependencies": {
     "hono": "^3.12.1",
@@ -11,7 +12,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vike": "^0.4.156",
-    "vike-react": "^0.3.9"
+    "vike-react": "^0.3.9",
+    "vitest": "^1.2.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.5.2",
@@ -21,6 +23,7 @@
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.2.1",
     "vite": "^5.0.11",
     "vite-plugin-cloudflare": "^0.4.1",
     "wrangler": "^3.22.0"
